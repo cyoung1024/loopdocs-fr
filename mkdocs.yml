@@ -1,0 +1,44 @@
+site_name: LoopDocs FR
+
+theme:
+    name: material
+    language: FR
+    features:
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.tracking
+        - navigation.top
+        - search.suggest
+        - search.highlight
+        - content.code.annotate
+    logo: loop-logo.png
+    favicon: loop-logo.png
+
+# repo_url: https://github.com/cyoung1024/LoopDocs-FR
+
+extra_css:
+    - stylesheets/extra.css
+    - stylesheets/primary-color.css
+
+
+markdown_extensions:
+    - meta
+    - admonition
+    - attr_list
+    - pymdownx.highlight
+    - pymdownx.inlinehilite
+    - pymdownx.superfences
+    - pymdownx.snippets
+    - toc:
+        permalink: true
+        permalink_title: Anchor link to this Header on this Page
+        toc_depth: 3
+        title: Headers on this Page
+
+plugins:
+    - search
+
+nav:
+- Home: 'index.md'
+- Constuire l`app:
+    - 'Vu d`ensemble': 'construire/apercu.md'
